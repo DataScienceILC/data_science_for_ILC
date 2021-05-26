@@ -1,0 +1,17 @@
+# Gebruik van Excel
+
+## introductie
+
+## Invoegen en importeren
+
+## inspectie en organisatie
+
+## beschrijvende statistiek
+
+## grafieken
+
+## inductieve statistiek
+
+### parametrische
+
+### non-parametrisch

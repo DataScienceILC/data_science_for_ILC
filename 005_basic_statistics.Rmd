@@ -1,0 +1,37 @@
+# Basis statistiek 
+
+Hier alle statistiek die **alle** ILC studenten leren in VL 1 t/m 4.
+
+## soorten data
+
+kwalitatief (ordinaal vs nominaal) vs kwantitatief (geen subcategoriën).
+
+Welk figuur bij welke data
+
+## meetfouten
+
+## probability
+
+## correlatie en regressie
+
+## Normaalverdeling en familie
+
+## steekproeven en 95% BI
+
+## null hypothese tests
+
+### experimental design
+
+### significantie
+
+### one sample t-test
+
+### two sample t-test
+
+#### gepaard
+
+#### ongepaard
+
+### ANOVA
+
+### etc

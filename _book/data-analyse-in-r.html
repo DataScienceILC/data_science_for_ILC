@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Data analyse in R | _main.utf8</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Data analyse in R | _main.utf8" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Data analyse in R | _main.utf8" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="linux-bash.html"/>
+<link rel="next" href="open-science-1.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="./"><img style="float:left;" src="images/voorbeeldlogo2.png"></a> <h4 class=".paddingtitel ">DATA ILC</h2></li>
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Data science bij het ILC</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-analyse-stappenplan"><i class="fa fa-check"></i>Data analyse stappenplan</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#open-science"><i class="fa fa-check"></i>Open science</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#links-naar-cursuspaginas"><i class="fa fa-check"></i>links naar cursuspagina’s</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="wat-zit-waar.html"><a href="wat-zit-waar.html"><i class="fa fa-check"></i>Wat zit waar</a>
+<ul>
+<li class="chapter" data-level="" data-path="wat-zit-waar.html"><a href="wat-zit-waar.html#per-onderwerp"><i class="fa fa-check"></i>Per onderwerp</a></li>
+<li class="chapter" data-level="" data-path="wat-zit-waar.html"><a href="wat-zit-waar.html#per-cursus"><i class="fa fa-check"></i>Per cursus</a></li>
+<li class="chapter" data-level="" data-path="wat-zit-waar.html"><a href="wat-zit-waar.html#per-leerjaar"><i class="fa fa-check"></i>Per leerjaar</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html"><i class="fa fa-check"></i>Gebruik van Excel</a>
+<ul>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html#introductie"><i class="fa fa-check"></i>introductie</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html#invoegen-en-importeren"><i class="fa fa-check"></i>Invoegen en importeren</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html#inspectie-en-organisatie"><i class="fa fa-check"></i>inspectie en organisatie</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html#beschrijvende-statistiek"><i class="fa fa-check"></i>beschrijvende statistiek</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html#grafieken"><i class="fa fa-check"></i>grafieken</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html#inductieve-statistiek"><i class="fa fa-check"></i>inductieve statistiek</a>
+<ul>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html#parametrische"><i class="fa fa-check"></i>parametrische</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-excel.html"><a href="gebruik-van-excel.html#non-parametrisch"><i class="fa fa-check"></i>non-parametrisch</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i>data management</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-management.html"><a href="data-management.html#project-structure"><i class="fa fa-check"></i>project structure</a></li>
+<li class="chapter" data-level="" data-path="data-management.html"><a href="data-management.html#tidy-data"><i class="fa fa-check"></i>tidy data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="verslaglegging.html"><a href="verslaglegging.html"><i class="fa fa-check"></i>verslaglegging</a>
+<ul>
+<li class="chapter" data-level="" data-path="verslaglegging.html"><a href="verslaglegging.html#eisen-grafieken"><i class="fa fa-check"></i>eisen grafieken</a></li>
+<li class="chapter" data-level="" data-path="verslaglegging.html"><a href="verslaglegging.html#eisen-tabellen"><i class="fa fa-check"></i>eisen tabellen</a></li>
+<li class="chapter" data-level="" data-path="verslaglegging.html"><a href="verslaglegging.html#eisen-meer"><i class="fa fa-check"></i>eisen meer</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html"><i class="fa fa-check"></i>Basis statistiek</a>
+<ul>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#soorten-data"><i class="fa fa-check"></i>soorten data</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#meetfouten"><i class="fa fa-check"></i>meetfouten</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#probability"><i class="fa fa-check"></i>probability</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#correlatie-en-regressie"><i class="fa fa-check"></i>correlatie en regressie</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#normaalverdeling-en-familie"><i class="fa fa-check"></i>Normaalverdeling en familie</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#steekproeven-en-95-bi"><i class="fa fa-check"></i>steekproeven en 95% BI</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#null-hypothese-tests"><i class="fa fa-check"></i>null hypothese tests</a>
+<ul>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#experimental-design"><i class="fa fa-check"></i>experimental design</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#significantie"><i class="fa fa-check"></i>significantie</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#one-sample-t-test"><i class="fa fa-check"></i>one sample t-test</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#two-sample-t-test"><i class="fa fa-check"></i>two sample t-test</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#anova"><i class="fa fa-check"></i>ANOVA</a></li>
+<li class="chapter" data-level="" data-path="basis-statistiek.html"><a href="basis-statistiek.html#etc"><i class="fa fa-check"></i>etc</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="advanced-statistiek.html"><a href="advanced-statistiek.html"><i class="fa fa-check"></i>advanced statistiek</a>
+<ul>
+<li class="chapter" data-level="" data-path="advanced-statistiek.html"><a href="advanced-statistiek.html#power-analyses"><i class="fa fa-check"></i>power analyses</a></li>
+<li class="chapter" data-level="" data-path="advanced-statistiek.html"><a href="advanced-statistiek.html#pca"><i class="fa fa-check"></i>PCA</a></li>
+<li class="chapter" data-level="" data-path="advanced-statistiek.html"><a href="advanced-statistiek.html#bayesian"><i class="fa fa-check"></i>Bayesian ;)</a></li>
+<li class="chapter" data-level="" data-path="advanced-statistiek.html"><a href="advanced-statistiek.html#meer-van-dattum"><i class="fa fa-check"></i>meer van dattum</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="gebruik-van-jasp.html"><a href="gebruik-van-jasp.html"><i class="fa fa-check"></i>Gebruik van JASP</a>
+<ul>
+<li class="chapter" data-level="" data-path="gebruik-van-jasp.html"><a href="gebruik-van-jasp.html#data-importeren"><i class="fa fa-check"></i>data importeren</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-jasp.html"><a href="gebruik-van-jasp.html#etc-1"><i class="fa fa-check"></i>etc</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-jasp.html"><a href="gebruik-van-jasp.html#data-analysis-report"><i class="fa fa-check"></i>data analysis report</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="gebruik-van-spss.html"><a href="gebruik-van-spss.html"><i class="fa fa-check"></i>Gebruik van SPSS</a>
+<ul>
+<li class="chapter" data-level="" data-path="gebruik-van-spss.html"><a href="gebruik-van-spss.html#data-importeren-1"><i class="fa fa-check"></i>data importeren</a></li>
+<li class="chapter" data-level="" data-path="gebruik-van-spss.html"><a href="gebruik-van-spss.html#etc-2"><i class="fa fa-check"></i>etc</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="linux-bash.html"><a href="linux-bash.html"><i class="fa fa-check"></i>Linux - bash</a></li>
+<li class="chapter" data-level="" data-path="data-analyse-in-r.html"><a href="data-analyse-in-r.html"><i class="fa fa-check"></i>Data analyse in R</a></li>
+<li class="chapter" data-level="" data-path="open-science-1.html"><a href="open-science-1.html"><i class="fa fa-check"></i>Open science</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-analyse-in-r" class="section level1">
+<h1>Data analyse in R</h1>
+<p>Here be links naar cursuspagina’s R.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="linux-bash.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="open-science-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
