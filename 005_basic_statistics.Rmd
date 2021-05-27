@@ -1,6 +1,48 @@
 # Basis statistiek 
 
+```{r, include=F}
+library(tidyverse)
+```
+
+
 Hier alle statistiek die **alle** ILC studenten leren in VL 1 t/m 4.
+
+## Overzicht van begrippen
+
+### variabele
+
+
+### populatie
+
+### onderzoeksvraag {#onderzoeksvraag}
+
+
+### steekproef
+
+
+### Proefopzet (experimental design)
+
+Bij een experiment sleutel je aan een of meer onafhankelijke variabelen en bekijk je het effect daarvan op een afhankelijke variabele om een hypothese te testen. Dus bijvoorbeeld, je geeft hamsters verschillende hoeveelheden voedsel: de ene groep veel, de andere groep weinig (*onafhankelijke variabele: hoeveelheid voedsel*), en bekijkt het effect op hun tandlengte (*afhankelijke variabele: tandlengte*). Je meet de tandlengte in de groep hamsters die veel eten krijgen (*steekproef 1*) en die van de groep hamsters die weinig eten krijgen (*steekproef #2*), en vergelijkt de tandlengtes van de twee groepen (*deductieve statistiek*) om te kijken of (*hypothese:*) hamsters die meer eten minder lange tanden krijgen.
+
+Experimenten doe je dus niet zomaar uit de losse pols, maar met een gestructureerde planning. Deze structuur: wat gaan we meten en hoe gaan we die metingen met elkaar vergelijken, vormt de proefopzet. Belangrijk is hierbij dat je met die opzet objectief en zo precies mogelijk een antwoord kunt gaan geven op je onderzoeksvraag.
+
+De proefopzet hangt af van het type [onderzoeksvraag](#onderzoeksvraag).
+
+#### vergelijkend experiment
+Bij de proefopzet in het voorbeeld hierboven past een vergelijkende onderzoeksvraag. Vergelijkende onderzoeksvragen kun je op twee manieren aanpakken: ongepaard of gepaard.
+
+ - **Ongepaarde proefopzet**: 2 onafhankelijke groepen waarvan de items / proefpersonen / proefdieren per groep maar 1 keer gemeten worden. De groepen bestaan vaak uit een controle groep en een behandelde groep. (*Maar ook het voorbeeld hierboven is een ongepaard experiment: hamsters zitten maar in 1 groep tegelijk en hun tandlengte wordt 1 keer gemeten.*)
+
+ - **Gepaarde proefopzet**: 1 groep die twee keer gemeten worden: voor de behandeling en na de behandeling. (*Een voorbeeld van een gepaarde variant op het voorbeeld-experiment zou zijn: je test 1 groep hamsters, die voer je 4 maanden lang weinig eten. Dan meet je hun tandlengte. Vervolgens voer je exact dezelfde hamsters 4 maanden lang veel eten, en meet je weer hun tandlengte.*)
+
+De proefopzet bepaalt dus ook wat voor deductieve statistiek je kunt gaan doen!
+
+#### correlationeel experiment
+
+Stel, je pakt je onderzoek heel anders aan, en zoekt 100 huisdier-hamsters in de omgeving Utrecht. Je vraagt hun baasjes om aan te geven hoeveel voer ze per week eten (*variabele 1: hoeveelheid voeding*), en je meet hun tandlengte (*variabele 2: tandlengte*). Vervolgens kun je kijken of hoe meer een hamster eet, hoe korter de tanden zijn. Dit is een correlationeel ontwerp. 
+
+
+
 
 ## soorten data
 
@@ -13,6 +55,17 @@ Welk figuur bij welke data
 ## probability
 
 ## correlatie en regressie
+
+```{r}
+
+hamstertibble <- tibble(
+  voeding=rnorm(100,50,8),
+  tandlengte = (voeding*.1)+rnorm(100,50,0.5)
+)
+
+hamstertibble %>% ggplot(aes(x=voeding, y=tandlengte))+
+  geom_point()
+```
 
 ## Normaalverdeling en familie
 

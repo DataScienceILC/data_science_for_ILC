@@ -27,17 +27,14 @@ Daar leiden we studenten ook voor op.
 
 Deze pagina biedt een overzicht van de data science vakken, onderwerpen en mogelijkheden bij ILC, voor zowel studenten als docenten.
 
+Let op: deze website is geen cursus. Wil je een cursus volgen over een bepaald onderwerp, kijk dan [hier](#Per-onderwerp). Deze website biedt wel een snel overzicht van waar verschillende dingen te vinden zijn, een naslagwerk(je) voor het gebruik van Excel en statistiek in de VL 1 t/m 4, en een overzicht van wat er van studenten gevraagd wordt op dit vlak (bijv eisen aan grafieken [hier](#grafieken))
+
 ## Data analyse stappenplan
-
-Stel , je hebt een interessante (biologische) vraag die je wilt beantwoorden. Je formuleert een hypothese, die je gaat testen met een wetenschappelijk experiment. Uit ieder wetenschappelijk experiment komt data. Een belangrijke stap is om de data te verwerken en te interpreteren zodat je inzicht krijgt in het proces dat je wilt bestuderen: klopt de hypothese, wordt de hypothese verworpen of moet de hypothese bijgeschaafd worden. Zonder een gedegen data analyse loop je vast en kan je niet verder met het genereren van nieuwe hypotheses en wetenschappelijke experimenten! 
-
-**Zonder data analyse geen wetenschap!**
 
 Data analyse verloopt volgens een aantal algemene stappen, eigenlijk in een cyclus.
 
 ![](images/data_analyse_workflow.png)
 
-Deze stappen vormen de kapstok binnen alle cursussen van de leerlijn bioinformatica.
 
 ## Open science
 
@@ -45,4 +42,4 @@ Vinden wij hip, hoera
 
 ## links naar cursuspagina's
 
-here be direct links
+Here be direct links
